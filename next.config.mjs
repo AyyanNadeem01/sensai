@@ -2,6 +2,9 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
+  images:{
+    domains:['randomuser.me'],
+  }
 };
 
 export default nextConfig;
