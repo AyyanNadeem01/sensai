@@ -162,3 +162,35 @@
   height: 100%;
   background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.9));
 }
+/* Professional resume styling */
+.resume-print {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-section {
+  break-inside: avoid;
+}
+
+/* Ensure good print layout */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .resume-content {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+}
+
+/* Enhanced typography */
+.professional-font {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
